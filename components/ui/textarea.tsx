@@ -1,9 +1,7 @@
 import { TextareaHTMLAttributes } from 'react'
 import clsx from 'clsx'
 
-interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
-
-export function Textarea({ className, ...props }: TextareaProps) {
+export function Textarea({ className, ...props }: TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return (
     <textarea
       className={clsx(
